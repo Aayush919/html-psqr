@@ -13,7 +13,6 @@ body {
 
 
 /* Hero page whith 200vh height and linear gradient */
-
 .hero {
     height: 200vh;
     width: 100%;
@@ -21,7 +20,7 @@ body {
 }
 
 
-/* nav bar  */
+/* navbar */
 .nav {
     height: 70px;
     width: 100%;
@@ -38,17 +37,17 @@ body {
     text-transform: uppercase;
 }
 
-/* nav PSQUARE COMPANY Whith opacity 1*/
 
+/* nav bar psquare company */
 .nav .pc {
     position: absolute;
     right: 10%;
     opacity: 1;
-    transition: ease .5s;
+    transition: ease /1s;
 }
 
+/* nav bar contact */
 
-/* nav contact  Whith opacity 0 initially*/
 .nav .contact {
     position: absolute;
     right: 15%;
@@ -56,36 +55,34 @@ body {
     transition: ease .5s;
 
 }
-/* text div containe Simplyfying */
 
 
-.text {
+
+/* simplyfying h1 tag */
+
+
+.hero h1 {
     position: absolute;
-    top: 35%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    text-transform: uppercase;
     line-height: 7vw;
-
-}
-
-/* h1 tag */
-.text h1 {
     font-family: gilroy;
     color: #69467E;
     letter-spacing: 2px;
-    font-size: 8vw;
+    font-size: 7vw;
+    text-transform: uppercase;
 }
-/* hr tag inside hero section contain success */
 
+/* success h2 tag */
 .hero h2 {
     font-family: gilroy;
     font-size: 6vw;
     color: #69467EB3;
     position: absolute;
-    /* top: 100%; */
     top: 20%;
     left: 37%;
+    text-transform: uppercase;
     z-index: -999;
 }
