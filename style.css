@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* Hero page whith 200vh height and linear gradient */
+
+.hero {
+    height: 200vh;
+    width: 100%;
+    background: transparent linear-gradient(197deg, #ECE7E100 0%, #82638F57 35%, #330152 100%) 0% 0% no-repeat padding-box;
+}
+
+
+/* nav bar  */
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 115px;
+    color: #330152;
+    font-weight: 700;
+    font-family: gilroy;
+    font-size: 1vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+
+/* nav PSQUARE COMPANY Whith opacity 1*/
+
+.nav .pc {
+    position: absolute;
+    right: 10%;
+    opacity: 1;
+    transition: ease .5s;
+}
+
+
+/* nav contact  Whith opacity 0 initially*/
+.nav .contact {
+    position: absolute;
+    right: 15%;
+    opacity: 0;
+    transition: ease .5s;
+
+}
+/* text div containe Simplyfying */
+
+
+.text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 7vw;
+
+}
+
+/* h1 tag */
+.text h1 {
+    font-family: gilroy;
+    color: #69467E;
+    letter-spacing: 2px;
+    font-size: 8vw;
+}
+/* hr tag inside hero section contain success */
+
+.hero h2 {
+    font-family: gilroy;
+    font-size: 6vw;
+    color: #69467EB3;
+    position: absolute;
+    /* top: 100%; */
+    top: 20%;
+    left: 37%;
+    z-index: -999;
+}
