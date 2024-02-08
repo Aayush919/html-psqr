@@ -1,136 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
-
- 
+  height: 100%;
+  width: 100%;
 }
-
-
 
 /* Hero page whith 200vh height and linear gradient */
 .hero {
-    height: 200vh;
-    width: 100%;
-    background: transparent linear-gradient(197deg, #ECE7E100 0%, #82638F57 35%, #330152 100%) 0% 0% no-repeat padding-box; 
-     position: relative;
-     overflow: hidden;   
+  height: 200vh;
+  width: 100%;
+  background: transparent
+    linear-gradient(197deg, #ece7e100 0%, #82638f57 35%, #330152 100%) 0% 0%
+    no-repeat padding-box;
+  position: relative;
+  /* overflow: hidden; */
 }
-
-
 
 /* navbar */
 .nav {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 22px 115px;
-  color: #69467E ;
-    font-weight: 700;
-    font-family: gilroy;
-    font-size: 1vw;
-    position: fixed;
-    /* position: sticky; */
-    top: 0;
-    left: 0;
-    z-index: 99999;
-    text-transform: uppercase;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 115px;
+  color: #69467e;
+  font-weight: 700;
+  font-family: gilroy;
+  font-size: 1vw;
+  position: fixed;
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  z-index: 9;
+  text-transform: uppercase;
 }
-
 
 /* nav bar psquare company */
 .nav .pc {
-    position: absolute;
-    right: 10%;
-    opacity: 1;
-    transition: ease /1s;
+  position: absolute;
+  right: 10%;
+  opacity: 1;
+  transition: ease / 1s;
 }
 
 /* nav bar contact */
 
 .nav .contact {
-    position: absolute;
-    right: 15%;
-    opacity: 0;
-    transition: ease .5s;
-
+  position: absolute;
+  right: 15%;
+  opacity: 0;
+  transition: ease 0.5s;
 }
-
-
 
 /* simplyfying h1 tag */
 
-
 .hero h1 {
-    position: absolute;
-    top: 35vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    line-height: 7vw;
-    font-family: gilroy;
-    color: #69467E;
-    letter-spacing: 2px;
-    font-size: 7vw;
-    text-transform: uppercase;
-    /* z-index:; */
-    /* color:transparent; */
-    /* background: linear-gradient(to bottom, black 40%, red 60%);
-    -webkit-background-clip:text; */
+  position: absolute;
+  top: 35vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 7vw;
+  color: #69467e;
+  letter-spacing: 2px;
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
 }
 
 /* success h2 tag */
 .hero h2 {
-    font-family: gilroy;
-    font-size: 6vw;
-    color: #69467EB3;
-    position: absolute;
-    top: 40vh;
-    left: 37vw;
-    text-transform: uppercase;
-    z-index: -9;
+  font-family: gilroy;
+  font-size: 6vw;
+color: #330152;
+  position: absolute;
+  top: 40vh;
+  left: 37vw;
+  text-transform: uppercase;
+  z-index: -9;
+  font-family: "montserrat", sans-serif;
+font-weight: 700;
+font-style: normal;
+ 
 }
 
-.page2{
-    height: 100vh;
-    /* background-color: #ECE7E1; */
-    /* background-color: #fff; */
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    
-
+.page2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ECE7E1;
 }
 
- .page2 h1{
-    position: absolute;
-    top: -173vh;
-    color: #77568B;
-    left: 65.4vh;
-    font-size: 7vw;
-    text-align: center;
-    line-height: 7vw;
-    font-family: gilroy;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    
-    
-  
-   
-
-} 
-
-
-.page3{
-    height: 100vh;
-    background-color:red;
-    width: 100%;
+.page2 h1 {
+  position: absolute;
+  top: -176.8vh;
+  color: #330152;
+  left: 51.8vh;
+  font-size: 7vw;
+  text-align: center;
+  line-height: 7vw;
+  font-family: gilroy;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
+.page3 {
+  height: 100vh;
+  background-color: red;
+  width: 100%;
+}
+.bottom-text {
+  height: 100px;
+  width: 90%;
+  display: block;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-text h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.bottom-text h2 span{
+  display:inline-block;
+  white-space:nowrap;
+
+}

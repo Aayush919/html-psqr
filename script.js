@@ -54,7 +54,7 @@ init();
 
 // navTimeline.play();
 
-// nav shadow animation
+
 gsap.to(".nav", {
   boxShadow: "0px 3px 10px rgba(0, 0, 0, 0.75)",
   scrollTrigger: {
@@ -69,7 +69,7 @@ gsap.to(".nav", {
 
 
 
-// //PIN success animation
+//PIN success animation
 gsap.to(".hero h2", {
   textShadow: "0px 3px 12px #00000080",
   color: '#FAF2FF',
@@ -81,61 +81,145 @@ gsap.to(".hero h2", {
     trigger: ".hero h2",
     scroller: "#main",
     scrub: true,
-    start: '184vh 407vh',
-    end: "20vh top"
-  }
-});
-
-// move animation simplyfying
-gsap.to(".hero h1", {
-  textShadow: "0px 3px 12px #00000080",
-  color: '#FAF2FF',
-  top: '252vh',
-  ease: "power2.out",
-  duration:2, // Set the duration for the first animation
-  scrollTrigger: {
-    trigger: ".hero",
-    scroller: "#main",
-    scrub: true,
-    start: '1vh top',
-    end: "1885vh top",
- 
+    start: '18vh 407vh',
+    end: "-40vh top",
   }
 });
 
 
 gsap.to(".page2 h1", {
-  top: '20vh',
-  ease: "power2.out",
-  duration: '2', // Set the duration for the first animation
+  top: '16.8vh',
+  fontFamily:"'montserrat', 'sans-serif'",
+fontWeight: 500,
+fontStyle: 'normal',
   scrollTrigger: {
     trigger: ".hero",
     scroller: "#main",
     scrub: true,
     start: '1vh 20vh',
-    end: "1530vh 10vh",
-   
+    end: "1900vh 10vh",
   }
 });
 
 
+const s = gsap.timeline();
 
-// gsap.to(".hero h1", {
-//   scale: 0.3,
-//   x: "-70%", 
-//   textShadow: "0",
-//   fontWeight:'200',
-//   duration: 30,
+s.to(".hero h1", {
+  textShadow: "0px 3px 12px #00000080",
+  color: '#FAF2FF',
+  top: '245vh',
+  scrollTrigger: {
+    trigger: ".hero",
+    scroller: "#main",
+    scrub: true,
+    start: '1vh top',
+    end: "top -2270vh",
+  
+    // markers:true,
+  
+
+  }
+})
+.to(".page2 h1", {
+left:'-5vh',
+scale:0.4,
+fontWeight:300,
+  scrollTrigger: {
+    trigger: ".page2",
+    scroller: "#main",
+    scrub: 1,
+    start: '1vh 290vh',
+    end: "1vh 100vh",
+
+  }
+})
+// .to(".page2 h1",{
 //   scrollTrigger: {
-//     scrub: 2,
 //     trigger: ".page2",
 //     scroller: "#main",
-//     start: "250vh 400vh", 
-//     endTrigger: ".hero h1", 
-//     end: "1470vh 400vh", 
+//     scrub: true,
+//     markers:true,
+//     start: '1vh 1vh',
+//     end: "1vh -10000vh",
+//     pin:true,
+//   }
+// })
 
-//   },
-// });
+const t=gsap.timeline();
+
+t.from(".page2 .bottom-text h2 .one", {
+  x: 600, // Example value for translation on the X-axis
+  delay: 3,
+  duration:10,
+  opacity:0,
+// transform:'translateX(2000px)'
+  
+})
+.from(".page2 .bottom-text h2 .two",{
+  x: 610, // Example value for translation on the X-axis
+  delay:-8,
+  duration:10,
+  opacity:0,
+// transform:'translateX(1600px)'
+})
+.from(".page2 .bottom-text h2 .three",{
+  x: 620, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+// transform:'translateX(2000px)'
+})
+.from(".page2 .bottom-text h2 .four",{
+  x: 630, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+})
+.from(".page2 .bottom-text h2 .five",{
+  x: 640, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+}).from(".page2 .bottom-text h2 .six",{
+  x: 660, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+})
+.from(".page2 .bottom-text h2 .seven",{
+  x: 680, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+})
+.from(".page2 .bottom-text h2 .eight",{
+  x: 700, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+}).from(".page2 .bottom-text h2 .nine",{
+  x: 720, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+}).from(".page2 .bottom-text h2 .ten",{
+  x: 740, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+
+}).from(".page2 .bottom-text h2 .eleven",{
+  x: 760, // Example value for translation on the X-axis
+  duration:10,
+  delay:-8,
+  opacity:0,
+})
 
 
 
@@ -144,22 +228,4 @@ gsap.to(".page2 h1", {
 
 
 
-
-
-
-
-
-
-
-
-//whithe to light brown 
-//simplyfying data scroll in minus 
-//nav bar tranparent 
-//left and font wigth and font size decrese 
-//one by one opactiy
-//first set the how wordl one by one 
-//afte that does the business
-//grid 
-
-
-
+//span tag from 
